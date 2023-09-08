@@ -157,6 +157,36 @@
     }
 }
 
+/* hp kecil potrait */
+@media (max-width: 576px) {
+    /* Atur tata letak dan ukuran elemen untuk smartphone dengan layar kecil */
+  }
+  
+/* hp kecil ladscpae */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Atur tata letak dan ukuran elemen untuk smartphone dengan layar kecil dalam modus landscape */
+  }
+  
+  /* hp mengah potrait */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Atur tata letak dan ukuran elemen untuk smartphone dengan layar menengah */
+  }
+  
+  /* tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Atur tata letak dan ukuran elemen untuk tablet */
+  }
+  
+  /*tablet/layar lebarkecil */
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Atur tata letak dan ukuran elemen untuk tablet dan layar lebar kecil */
+  }
+
+    /* desktop */
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Atur tata letak dan ukuran elemen untuk tablet dan layar lebar kecil */
+  }
+  
 
 /*** Hero Header ***/
 .hero-header {
@@ -177,6 +207,16 @@
 .hero-body {
     background-color: #000000;
 }
+
+.container-xxl {
+    width: 100%;
+    max-width: 1000%; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+  
 
 .hero-header img {
     animation: imgRotate 50s linear infinite;
