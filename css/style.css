@@ -159,39 +159,213 @@
 
 /* hp kecil potrait */
 @media (max-width: 576px) {
-    /* Atur tata letak dan ukuran elemen untuk smartphone dengan layar kecil */
-  }
+    /* Aturan CSS untuk perangkat seluler dalam orientasi potret */
+}
+
   
 /* hp kecil ladscpae */
 @media (max-width: 768px) and (orientation: landscape) {
-    /* Atur tata letak dan ukuran elemen untuk smartphone dengan layar kecil dalam modus landscape */
-  }
+        .carousel-control-prev-pov-silo,
+        .carousel-control-next-pov-silo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: 0px; 
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .carousel-control-prev-pov-silo {
+        left: 0;
+    }
+
+    .carousel-control-next-pov-silo {
+        right: 0;
+    }
+}
+
   
   /* hp mengah potrait */
-@media (min-width: 577px) and (max-width: 768px) {
-    /* Atur tata letak dan ukuran elemen untuk smartphone dengan layar menengah */
-  }
-  
+  @media (max-width: 768px) {
+        .carousel-control-prev-pov-silo,
+        .carousel-control-next-pov-silo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: 900px; 
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .carousel-control-prev-pov-silo {
+        left: 0;
+    }
+
+    .carousel-control-next-pov-silo {
+        right: 0;
+    }
+
+    
+    .carousel-control-prev-pov-sirloin,
+    .carousel-control-next-pov-sirloin {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: 850px; 
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .carousel-control-prev-pov-sirloin {
+        left: 0;
+    }
+
+    .carousel-control-next-pov-sirloin {
+        right: 0;
+    }
+
+    .carousel-control-prev-galeri-silo,
+    .carousel-control-next-galeri-silo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: 20px; 
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .carousel-control-prev-galeri-silo {
+        left: 0;
+    }
+    
+    .carousel-control-next-galeri-silo {
+        right: 0;
+    }
+
+    .carousel-control-prev-galeri-sirloin,
+    .carousel-control-next-galeri-sirloin {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: 150px; 
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .carousel-control-prev-galeri-sirloin {
+        left: 0;
+    }
+
+    .carousel-control-next-galeri-sirloin {
+        right: 0;
+    }
+
+}
+
   /* tablet */
-@media (min-width: 769px) and (max-width: 1024px) {
-    /* Atur tata letak dan ukuran elemen untuk tablet */
-  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Aturan CSS untuk tablet */
+}
+
   
   /*tablet/layar lebarkecil */
-@media (min-width: 769px) and (max-width: 1200px) {
-    /* Atur tata letak dan ukuran elemen untuk tablet dan layar lebar kecil */
-  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    /* Aturan CSS untuk tablet dan layar lebar kecil */
+}
+
 
     /* desktop */
-@media (min-width: 769px) and (max-width: 1200px) {
-    /* Atur tata letak dan ukuran elemen untuk tablet dan layar lebar kecil */
-  }
-  
+ @media (min-width: 1201px) {
+    .carousel-control-prev-pov-silo,
+    .carousel-control-next-pov-silo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: 800px; 
+    margin-left: 250px;
+    margin-right: 250px;
+    }
+
+    .carousel-control-prev-pov-silo {
+    left: 0;
+    }
+
+    .carousel-control-next-pov-silo {
+    right: 0;
+    }
+
+
+    .carousel-control-prev-pov-sirloin,
+    .carousel-control-next-pov-sirloin {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: 850px; 
+        margin-left: 280px;
+        margin-right: 280px;
+    }
+
+    .carousel-control-prev-pov-sirloin {
+        left: 0;
+    }
+
+    .carousel-control-next-pov-sirloin {
+        right: 0;
+    }
+
+    .carousel-control-prev-galeri-silo,
+    .carousel-control-next-galeri-silo {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: -30px; 
+        margin-left: 280px;
+        margin-right: 280px;
+    }
+    
+    .carousel-control-prev-galeri-silo {
+        left: 0;
+    }
+    
+    .carousel-control-next-galeri-silo {
+        right: 0;
+    }
+
+    .carousel-control-prev-galeri-sirloin,
+    .carousel-control-next-galeri-sirloin {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: 150px; 
+        margin-left: 390px;
+        margin-right: 390px;
+    }
+
+    .carousel-control-prev-galeri-sirloin {
+        left: 0;
+    }
+
+    .carousel-control-next-galeri-sirloin {
+        right: 0;
+    }
+
+
+}
+    
+
 
 /*** Hero Header ***/
 .hero-header {
     background:  url(../img/dashboard-img.jpg);
-    /* background-attachment: fixed; */
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,7 +384,7 @@
 
 .container-xxl {
     width: 100%;
-    max-width: 1000%; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
+    max-width: 1000%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -340,6 +514,7 @@
     text-align: center;
 }
 
+
 /* SILO */
 .silo-header {
     background:  url(../img/silo\ may-17.jpg);
@@ -360,6 +535,8 @@
     background-repeat: no-repeat;
 }
 
+
+
 #myCarousel .list-inline {
     white-space:nowrap;
     overflow-x:auto;
@@ -369,7 +546,7 @@
     margin-top: 20px;
 }
 .carousel-indicators {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -422,49 +599,6 @@
     opacity: 0.7;
 }
 
-
-/* SIR LOIN */
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin-top: 150px; 
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.carousel-control-prev {
-    left: 0;
-}
-
-.carousel-control-next {
-    right: 0;
-}
-
-/* SILO */
-.carousel-control-prev-silo,
-.carousel-control-next-silo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin-top: 20px; 
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.carousel-control-prev-silo {
-    left: 0;
-}
-
-.carousel-control-next-silo {
-    right: 0;
-}
-
-
-
 /* SIRLOIN */
 .sirloin-header {
     background:  url(../img/IMG_0502.jpg);
@@ -484,6 +618,8 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
 
 /* ABOUT */
 .hero-header-about {
@@ -536,7 +672,6 @@
 /* CONTACT */
 .hero-header-contact {
     background:  url(../img/bg-esta.9cb2af74.jpg);
-    /* background-attachment: fixed; */
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -547,18 +682,19 @@
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 50%; /* Full width */
+    width: 50%;
     background-color: #000000;
-    padding: 12px; /* Some padding */ 
-    border: 1px solid white; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    padding: 12px;
+    border: 1px solid white; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+    color: white;
   }
   
-  /* Style the submit button with a specific background color etc */
+
   input[type=submit] {
     border: none;
     border-radius: 4px;
@@ -574,12 +710,11 @@ input[type=text], select, textarea {
     display: block;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+
   input[type=submit]:hover {
     background-color: orange
   }
   
-  /* Add a background color and some padding around the form */
   #contact .container {
     border-radius: 5px;
     background-color: black;
