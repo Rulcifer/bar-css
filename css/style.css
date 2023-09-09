@@ -215,7 +215,6 @@
     margin-right: auto;
 }
 
-
   
 
 .hero-header img {
@@ -238,40 +237,78 @@
     align-items: center;
   }
 
+@media (max-width: 575.98px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .card {
+        width: 300px; 
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .card {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .card {
+        width: 500px;
+    }
+}
+
 .card {
     display: inline-block;
     align-items: center;
     position: relative;
     border: #000000;
-    width: 500px; 
-    height: 200px;
+    width: 310px; 
+    height: 240px;
     margin: 25px;
     overflow: hidden;
   }
+
+  .card .card-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+  }
   
+  .card:hover .card-image {
+    transform: scale(1.05);
+  }
+  
+  .hover-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* transform: scale(0.8); */
+    width: 170px;
+    height: auto;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s;
+    filter: brightness(1);
+  }
+
+  .card:hover .card-image {
+    filter: brightness(0.2);
+}
+
+.card:hover .hover-image {
+    opacity: 1;
+}
+
   .card-image {
     width: 100%;
     height: 100%;
     object-fit: cover; 
     transition: transform 0.2s;
-  }
-  
-  .card-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8); 
-    color: white;
-    padding: 10px 20px; 
-    opacity: 0; 
-    transition: opacity 0.2s, background-color 0.2s; 
-  }
-  
-  .card:hover .card-title {
-    opacity: 1; 
-    background-color: rgba(0, 0, 0, 1); 
-    border: 1px solid white;
   }
   
   .card:hover .card-image {
@@ -328,6 +365,13 @@
     overflow-x:auto;
 }
 
+#myCarousel {
+    margin-top: 20px;
+}
+.carousel-indicators {
+    margin-top: 20px;
+}
+
 
 #myCarousel .list-inline-item {
     vertical-align: middle;
@@ -377,6 +421,49 @@
 #myCarousel .carousel-indicators > li.active img {
     opacity: 0.7;
 }
+
+
+/* SIR LOIN */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: 150px; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+/* SILO */
+.carousel-control-prev-silo,
+.carousel-control-next-silo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-top: 20px; 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.carousel-control-prev-silo {
+    left: 0;
+}
+
+.carousel-control-next-silo {
+    right: 0;
+}
+
+
 
 /* SIRLOIN */
 .sirloin-header {
