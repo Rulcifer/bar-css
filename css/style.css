@@ -401,6 +401,29 @@
 
     /* desktop */
  @media (min-width: 1201px) {
+
+    #myCarousel {
+        width: auto;
+        overflow: hidden;
+    }
+
+    #myCarousel .carousel-indicators .list-inline-item {
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100px;
+    }
+
+    .thumbnail-image-mini-galeri {
+        max-width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+    }
+
+    
     .carousel-control-prev-galeri,
     .carousel-control-next-galeri {
         position: absolute;
@@ -420,6 +443,24 @@
         right: 0;
     }
 
+        .carousel-control-prev-galeri,
+    .carousel-control-next-galeri {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: -50px; 
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+    .carousel-control-prev-galeri {
+        left: 0;
+    }
+    
+    .carousel-control-next-galeri {
+        right: 0;
+    }
 
 }
     
