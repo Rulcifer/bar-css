@@ -159,7 +159,43 @@
 
 /* hp kecil potrait */
 @media (max-width: 576px) {
-    /* Aturan CSS untuk perangkat seluler dalam orientasi potret */
+
+    .img-container {
+        flex-basis: calc(33.33% - 20px);
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        display: inline-block;
+        align-items: center;
+        position: relative;
+        border: #000000;
+        width: 100%; 
+        max-width: 30px;
+        height: 240px;
+        margin: 25px;
+        overflow: hidden;
+      }
+
+
+    .carousel-control-prev-galeri,
+    .carousel-control-next-galeri {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: -40px; 
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .carousel-control-prev-galeri {
+        left: 0;
+    }
+    
+    .carousel-control-next-galeri {
+        right: 0;
+    }
+
+
 }
 
   
