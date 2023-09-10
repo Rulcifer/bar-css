@@ -281,47 +281,8 @@
 
     /* desktop */
  @media (min-width: 1201px) {
-    .carousel-control-prev-pov-silo,
-    .carousel-control-next-pov-silo {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin-top: 800px; 
-    margin-left: 250px;
-    margin-right: 250px;
-    }
-
-    .carousel-control-prev-pov-silo {
-    left: 0;
-    }
-
-    .carousel-control-next-pov-silo {
-    right: 0;
-    }
-
-
-    .carousel-control-prev-pov-sirloin,
-    .carousel-control-next-pov-sirloin {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-        margin-top: 850px; 
-        margin-left: 280px;
-        margin-right: 280px;
-    }
-
-    .carousel-control-prev-pov-sirloin {
-        left: 0;
-    }
-
-    .carousel-control-next-pov-sirloin {
-        right: 0;
-    }
-
-    .carousel-control-prev-galeri-silo,
-    .carousel-control-next-galeri-silo {
+    .carousel-control-prev-galeri,
+    .carousel-control-next-galeri {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -331,30 +292,11 @@
         margin-right: 280px;
     }
     
-    .carousel-control-prev-galeri-silo {
+    .carousel-control-prev-galeri {
         left: 0;
     }
     
-    .carousel-control-next-galeri-silo {
-        right: 0;
-    }
-
-    .carousel-control-prev-galeri-sirloin,
-    .carousel-control-next-galeri-sirloin {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-        margin-top: 150px; 
-        margin-left: 390px;
-        margin-right: 390px;
-    }
-
-    .carousel-control-prev-galeri-sirloin {
-        left: 0;
-    }
-
-    .carousel-control-next-galeri-sirloin {
+    .carousel-control-next-galeri {
         right: 0;
     }
 
@@ -605,7 +547,6 @@
 .carousel-indicators {
     margin-top: 10px;
 }
-
 
 #myCarousel .list-inline-item {
     vertical-align: middle;
