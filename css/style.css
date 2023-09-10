@@ -600,6 +600,7 @@
 
 #myCarousel {
     margin-top: 20px;
+    overflow: hidden;
 }
 .carousel-indicators {
     margin-top: 10px;
@@ -623,11 +624,16 @@
     justify-content: center; /* Untuk mengatur horizontal center */
     align-items: center; /* Untuk mengatur vertical center */
     height: 100%; /* Agar tinggi sesuai dengan tinggi carousel */
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 #myCarousel .carousel-item{
     vertical-align: middle;
     text-align: center; /* Untuk mengatur posisi teks jika diperlukan */
+    margin: 0;
+    padding: 0;
 }
 
 #myCarousel .carousel-indicators {
@@ -646,6 +652,8 @@
 
 #myCarousel .carousel-indicators .list-inline-item {
     vertical-align: middle;
+    margin-right: 100px;
+    /* padding: 5px; */
 }
 
 
