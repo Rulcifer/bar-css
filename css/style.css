@@ -653,7 +653,8 @@
 #myCarousel .carousel-indicators .list-inline-item {
     vertical-align: middle;
     margin-right: 100px;
-    /* padding: 5px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
