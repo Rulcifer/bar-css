@@ -168,9 +168,14 @@
 /* hp kecil potrait */
 @media (max-width: 576px) {
 
+    .container{
+        margin-top:50px;
+        margin-bottom:130px;
+    }
+
     .carousel-inner img {
         width: 100%;
-        height: 50%;
+        height: 100%;
     }
   
   #custCarousel .carousel-indicators {
@@ -196,9 +201,59 @@
     }
   
     .carousel-item img{
-      height: 200px;
-      width:20%;
+      height: 350px;
+      width:50%;
       object-fit: cover;
+    }
+
+    .list-inline-item img{
+        height: 50px;
+        max-width: 100%;
+        width:100%;
+        object-fit: cover;
+      }
+
+    
+
+
+    .carousel-control-prev-galeri,
+    .carousel-control-next-galeri {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        margin-top: -30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .carousel-control-prev-galeri {
+        left: 0;
+    }
+
+    .carousel-control-next-galeri {
+        right: 0;
+    }
+
+    #myCarousel {
+        width: auto;
+        overflow: hidden;
+    }
+
+    #myCarousel .carousel-indicators .list-inline-item {
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100px;
+    }
+
+    .thumbnail-image-mini-galeri {
+        max-width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
     }
 
 }
@@ -386,6 +441,55 @@
 
 /* desktop */
 @media (min-width: 1201px) {
+
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+  
+  #custCarousel .carousel-indicators {
+      position: static;
+      margin-top:20px;
+  }
+  
+  #custCarousel .carousel-indicators > li {
+    width:100px;
+  }
+  
+   #custCarousel .carousel-indicators li img {
+      display: block;
+      opacity: 0.5;
+   }
+  
+    #custCarousel .carousel-indicators li.active img {
+      opacity: 1;
+    }
+  
+    #custCarousel .carousel-indicators li:hover img {
+      opacity: 0.75;
+    }
+  
+    .carousel-item img{
+      height: 900px;
+      width:50%;
+      object-fit: cover;
+    }
+
+    .list-inline-item img{
+        height: 70px;
+        width:100%;
+        object-fit: cover;
+      }
+
+ 
+
+
+
+
+
+
+
+
 
     #myCarousel {
         width: auto;
