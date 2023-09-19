@@ -438,9 +438,77 @@
 .img-container:hover .card-conten {
     transform: scale(1.05);
 }
-
-
 }
+
+@media (min-width: 360px) {
+       /* TAMPILAN JEJER */
+       .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 50px));
+        gap: 1px;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    .img-container {
+        position: relative;
+        border: #000000;
+        width: 100px;
+        height: 50px;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    
+    .img-container:hover .card-conten {
+        transform: scale(1.05);
+    }
+    
+    .hover-conten {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 115px;
+        height: auto;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.6s;
+        filter: brightness(1);
+    }
+    
+    .img-container:hover .card-conten {
+        filter: brightness(0.2);
+    }
+    
+    .img-container:hover .hover-conten {
+        opacity: 1;
+    }
+    
+    .card-conten {
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.2s;
+        height: 50px;
+
+    }
+    
+    .img-container:hover .card-conten {
+        transform: scale(1.05);
+    }
+  }
+  
+  @media screen and (min-width: 740px) and (max-width: 1440px) {
+    /* Atur gaya CSS Anda di sini */
+  }
+  
 
 
 /* hp mengah potrait */
@@ -509,8 +577,8 @@
           /* TAMPILAN JEJER */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
-    gap: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(187px, 150px));
+    gap: 1px;
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
@@ -520,9 +588,10 @@
 .img-container {
     position: relative;
     border: #000000;
-    width: 140px;
+    width: 187px;
     height: 140px;
-    margin: 5px;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
     object-fit: cover;
     object-position: center;
@@ -555,7 +624,7 @@
 }
 
 .card-conten {
-    width: 140px;
+    width: 187px;
     height: auto;
     object-fit: cover;
     object-position: center;
@@ -635,65 +704,66 @@
     }
 
           /* TAMPILAN JEJER */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
-    gap: 0px;
-    overflow-x: hidden;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-
-.img-container {
-    position: relative;
-    border: #000000;
-    width: 190px;
-    height: 190px;
-    margin: 5px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-.img-container:hover .card-conten {
-    transform: scale(1.05);
-}
-
-.hover-conten {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 130px;
-    height: auto;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.6s;
-    filter: brightness(1);
-}
-
-.img-container:hover .card-conten {
-    filter: brightness(0.2);
-}
-
-.img-container:hover .hover-conten {
-    opacity: 1;
-}
-
-.card-conten {
-    width: 190px;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.2s;
-    height: 190px;
-}
-
-.img-container:hover .card-conten {
-    transform: scale(1.05);
-}
+          .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(187px, 150px));
+            gap: 1px;
+            overflow-x: hidden;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+        }
+        
+        .img-container {
+            position: relative;
+            border: #000000;
+            width: 187px;
+            height: 140px;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        
+        .img-container:hover .card-conten {
+            transform: scale(1.05);
+        }
+        
+        .hover-conten {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 115px;
+            height: auto;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.6s;
+            filter: brightness(1);
+        }
+        
+        .img-container:hover .card-conten {
+            filter: brightness(0.2);
+        }
+        
+        .img-container:hover .hover-conten {
+            opacity: 1;
+        }
+        
+        .card-conten {
+            width: 187px;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.2s;
+            height: 140px;
+        }
+        
+        .img-container:hover .card-conten {
+            transform: scale(1.05);
+        }
 
 
 }
@@ -908,7 +978,7 @@
     border: #000000;
     width: 240px;
     height: 240px;
-    margin: 5px;
+    /* margin: 5px; */
     overflow: hidden;
     object-fit: cover;
     object-position: center;
