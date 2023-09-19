@@ -376,6 +376,72 @@
       
 }
 
+/* samsung fold */
+@media (min-width: 280px) {
+              /* TAMPILAN JEJER */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 20px));
+    gap: 0px;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.img-container {
+    position: relative;
+    border: #000000;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.img-container:hover .card-conten {
+    transform: scale(1.05);
+}
+
+.hover-conten {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: auto;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s;
+    filter: brightness(1);
+}
+
+.img-container:hover .card-conten {
+    filter: brightness(0.2);
+}
+
+.img-container:hover .hover-conten {
+    opacity: 1;
+}
+
+.card-conten {
+    width: 10px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.2s;
+    height: 10px;
+}
+
+.img-container:hover .card-conten {
+    transform: scale(1.05);
+}
+
+
+}
+
 
 /* hp mengah potrait */
 @media (max-width: 768px) {
@@ -472,7 +538,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 170px;
+    width: 115px;
     height: auto;
     object-fit: cover;
     opacity: 0;
@@ -600,7 +666,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 170px;
+    width: 130px;
     height: auto;
     object-fit: cover;
     opacity: 0;
@@ -728,7 +794,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 170px;
+    width: 130px;
     height: auto;
     object-fit: cover;
     opacity: 0;
