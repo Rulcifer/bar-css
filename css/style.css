@@ -382,6 +382,18 @@
 /* hp mengah potrait */
 @media (max-width: 768px) {
 
+    .container-xxl {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .my-5 {
+        margin-top: -4rem !important;
+        margin-bottom: -5rem !important
+    }
+    
     .highlight-main {
         overflow: hidden;
         justify-content: center;
@@ -844,12 +856,12 @@
         overflow: hidden;
         justify-content: center;
         align-items: center;
-        padding: 0 160px;
+        padding: 0px 160px;
       }
 
     .highlight-main .carousel-cell img {
         width: 100%;
-        height: 700px;
+        height: 500px;
         align-items: center;
         justify-content: center;
         object-fit: cover;
@@ -857,7 +869,7 @@
 
       .highlight-thumbs .carousel-cell img {
         width: 150px;
-        height: 130px;
+        height: 110px;
         object-fit: cover;
       }
 
@@ -990,6 +1002,13 @@
     padding: 0px;
 }
 
+.container-xxl {
+    width: 100%;
+    max-width: 1000%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 }
 
 /* CAROUSEL SETUP */
@@ -1071,13 +1090,6 @@
 
 .hero-body {
     background-color: #000000;
-}
-
-.container-xxl {
-    width: 100%;
-    max-width: 1000%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
