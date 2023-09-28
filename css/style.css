@@ -981,7 +981,17 @@
         width: 120%;
         left: -10%;
       }
+      .flickity-prev-next-button {
+        background: transparent;
+        /* Atur properti lain sesuai kebutuhan desain Anda */
+      }
+      
+      /* Mengatur warna teks tombol prev dan next (jika diperlukan) */
+      .flickity-prev-next-button:hover {
+        color: #000; /* Ganti dengan warna teks yang sesuai */
+      }
 
+      
     #myCarousel {
         width: auto;
         overflow: hidden;
