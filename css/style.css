@@ -420,14 +420,14 @@
 .container-contact .contact-form input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin: 0;
+    margin: 5px 0;
 }
 
 
 .container-contact .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin: 0;
+    margin: 5px 0;
 }
 
 .submit-contact {
@@ -622,7 +622,59 @@
 
 /* tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
+/* CONTACT */
+.container-contact {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+}
 
+.alamat .judul_alamat {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -50px;
+    color: white;
+}
+
+.alamat .tempat_alamat {
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.tempat_alamat p {
+    margin: 1px 0; 
+}
+
+.container-contact .contact-form {
+    margin-bottom: -10px;
+    width: 112.5%;
+    margin-left: -20px;
+}
+
+.container-contact .contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+.container-contact .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.submit-contact {
+    margin-top: 20px;
+}
     .gallery-cell {
         overflow: hidden;
         justify-content: center;
@@ -804,6 +856,59 @@
 
 /*tablet/layar lebarkecil */
 @media (min-width: 1025px) and (max-width: 1200px) {
+/* CONTACT */
+.container-contact {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.alamat .judul_alamat {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -50px;
+    color: white;
+}
+
+.alamat .tempat_alamat {
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.tempat_alamat p {
+    margin: 1px 0; 
+}
+
+.container-contact .contact-form {
+    margin-bottom: -10px;
+    width: 112.5%;
+    margin-left: -20px;
+}
+
+.container-contact .contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+.container-contact .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.submit-contact {
+    margin-top: 20px;
+}
 
     .gallery-cell {
         overflow: hidden;
