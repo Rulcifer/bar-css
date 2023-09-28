@@ -381,6 +381,59 @@
 
 /* hp mengah potrait */
 @media (max-width: 768px) {
+/* CONTACT */
+.container-contact {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.alamat .judul_alamat {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -80px;
+    color: white;
+}
+
+.alamat .tempat_alamat {
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+.tempat_alamat p {
+    margin: 1px 0; 
+}
+
+.container-contact .contact-form {
+    margin-bottom: -10px;
+    width: 112.5%;
+    margin-left: -20px;
+}
+
+.container-contact .contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+
+.container-contact .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+.submit-contact {
+    margin-top: 20px;
+}
+
 
     .container-xxl {
         width: 100%;
@@ -983,15 +1036,51 @@
       }
       .flickity-prev-next-button {
         background: transparent;
-        /* Atur properti lain sesuai kebutuhan desain Anda */
       }
       
-      /* Mengatur warna teks tombol prev dan next (jika diperlukan) */
       .flickity-prev-next-button:hover {
-        color: #000; /* Ganti dengan warna teks yang sesuai */
+        color: #000;
       }
 
-      
+/* CONTACT */
+.container-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin: 0px 50px;
+}
+
+.alamat .judul_alamat {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-left: -80px;
+    color: white;
+}
+
+.alamat .tempat_alamat {
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.tempat_alamat p {
+    margin: 1px 0; 
+}
+
+.container-contact {
+    width: 80%;
+}
+
+.container-contact .contact-form {
+    margin-bottom: -10px;
+}
+
+.submit-contact {
+    margin-top: 20px;
+}
+
     #myCarousel {
         width: auto;
         overflow: hidden;
