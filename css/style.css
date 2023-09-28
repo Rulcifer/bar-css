@@ -415,6 +415,31 @@
         object-fit: cover;
       }
 
+      .gallery-cell {
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 1px;
+        width: 99%;
+        height: 330px;
+        margin-right: 2px;
+        counter-increment: gallery-cell;
+      }
+
+      .gallery .gallery-cell img {
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        display: block;
+      }
+
+      .custom-carousel-ukuran {
+        /* position: absolute; */
+        width: 120%;
+        left: -10%;
+      }
 
       #myCarousel {
         width: auto;
@@ -544,6 +569,34 @@
 
 /* tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    .gallery-cell {
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 1px;
+        width: 66%;
+        height: 500px;
+        margin-right: 2px;
+        counter-increment: gallery-cell;
+      }
+
+      .gallery .gallery-cell img {
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        display: block;
+      }
+
+      .custom-carousel-ukuran {
+        /* position: absolute; */
+        width: 120%;
+        left: -10%;
+      }
+
+
 
     .highlight-main {
         overflow: hidden;
@@ -698,6 +751,32 @@
 
 /*tablet/layar lebarkecil */
 @media (min-width: 1025px) and (max-width: 1200px) {
+
+    .gallery-cell {
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 1px;
+        width: 66%;
+        height: 500px;
+        margin-right: 2px;
+        counter-increment: gallery-cell;
+      }
+
+      .gallery .gallery-cell img {
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        display: block;
+      }
+
+      .custom-carousel-ukuran {
+        /* position: absolute; */
+        width: 120%;
+        left: -10%;
+      }
 
     .highlight-main {
         overflow: hidden;
@@ -856,24 +935,54 @@
         overflow: hidden;
         justify-content: center;
         align-items: center;
-        padding: 0px 160px;
+        padding: 0px 150px;
       }
 
     .highlight-main .carousel-cell img {
-        width: 100%;
+        width: 100px;
         height: 500px;
         align-items: center;
         justify-content: center;
         object-fit: cover;
+        display: block;
+        margin-left: -100px;
+        margin-right: -100px;
       }
 
-      .highlight-thumbs .carousel-cell img {
+    .highlight-thumbs .carousel-cell img {
         width: 150px;
         height: 110px;
         object-fit: cover;
       }
 
-      #myCarousel {
+
+      .gallery-cell {
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 1px;
+        width: 66%;
+        height: 500px;
+        margin-right: 2px;
+        counter-increment: gallery-cell;
+      }
+
+      .gallery .gallery-cell img {
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        display: block;
+      }
+
+      .custom-carousel-ukuran {
+        /* position: absolute; */
+        width: 120%;
+        left: -10%;
+      }
+
+    #myCarousel {
         width: auto;
         overflow: hidden;
     }
@@ -1011,12 +1120,293 @@
 
 }
 
-/* CAROUSEL SETUP */
+/* CSS untuk slider galeri */
+section.brand_gallery {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
 
-/* .container {
-  max-width: 700px;
-  margin: 0 auto;
-} */
+section.brand_gallery .brand-gallery-btn {
+    position: absolute;
+    top: 0;
+    width: 60px; /* Ubah lebar tombol galeri jika perlu */
+    height: 100%;
+    z-index: 30;
+    cursor: pointer;
+    background: transparent;
+}
+
+section.brand_gallery .brand-gallery-btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+
+section.brand_gallery .brand-gallery-btn .nav_arrow {
+    z-index: 2;
+    fill: white; /* Ubah warna panah sesuai kebutuhan Anda */
+}
+
+/* Tambahkan gaya lain sesuai kebutuhan Anda */
+
+/* CSS untuk gambar dalam slider galeri */
+section.brand_gallery .brand_gallery_wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+section.brand_gallery .brand_gallery_wrapper .slider_each {
+    flex: 0 0 auto;
+    width: 100%; /* Setiap elemen slider akan menempati lebar 100% */
+    scroll-snap-align: start;
+    position: relative;
+}
+
+section.brand_gallery .brand_gallery_wrapper .slider_each img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.2s;
+}
+
+section.brand_gallery .brand_gallery_wrapper .slider_each:hover img {
+    opacity: 0.8; /* Ubah opacity saat mengarahkan kursor sesuai kebutuhan Anda */
+}
+
+/* Tambahan CSS sesuai kebutuhan Anda */
+section.top_bottom_border {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+   }
+
+section.brand_gallery
+ > .brand_gallery_btn {
+ position: absolute;
+ top: 0;
+ width: 120px;
+ height: 100%;
+ z-index: 30;
+ cursor: pointer;
+ background: transparent;
+}
+section.brand_gallery
+ > .brand_gallery_btn:after {
+ content: '';
+ display: block;
+ position: absolute;
+ box-sizing: border-box;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ pointer-events: none;
+ opacity: 0;
+ transition: opacity 0.5s;
+ z-index: 1;
+}
+section.brand_gallery
+ > .brand_gallery_btn
+ > .nav_arrow {
+ z-index: 2;
+}
+section.brand_gallery
+ > .brand_gallery_btn.left {
+ left: 0;
+ right: auto;
+}
+section.brand_gallery
+ > .brand_gallery_btn.left
+ > .nav_arrow {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+section.brand_gallery
+ > .brand_gallery_btn.left:after {
+ background: linear-gradient(
+  90deg,
+  hsla(0, 0%, 100%, 0.5) 0,
+  hsla(0, 0%, 100%, 0)
+ );
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#00ffffff",GradientType=1);
+}
+section.brand_gallery
+ > .brand_gallery_btn.right {
+ left: auto;
+ right: 0;
+}
+section.brand_gallery
+ > .brand_gallery_btn.right
+ > .nav_arrow {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%)
+  rotate(180deg);
+}
+section.brand_gallery
+ > .brand_gallery_btn.right:after {
+ background: linear-gradient(
+  90deg,
+  hsla(0, 0%, 100%, 0) 0,
+  hsla(0, 0%, 100%, 0.5)
+ );
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff",endColorstr="#ffffff",GradientType=1);
+}
+body.onhover
+ section.brand_gallery
+ > .brand_gallery_btn:hover:after {
+ opacity: 1;
+}
+@media only screen and (max-width: 1024px) {
+ section.brand_gallery
+  > .brand_gallery_btn {
+  width: 90px;
+ }
+}
+@media only screen and (max-width: 650px) {
+ section.brand_gallery
+  > .brand_gallery_btn {
+  opacity: 0 !important;
+  width: 60px;
+ }
+}
+section.brand_gallery
+ .brand_gallery_wrapper {
+ width: 100%;
+ height: 500px;
+}
+section.brand_gallery
+ .brand_gallery_wrapper
+ .slider_each {
+ width: auto;
+ height: 500px;
+ cursor: pointer;
+ border-left: 2px solid #000;
+ position: relative;
+}
+section.brand_gallery
+ .brand_gallery_wrapper
+ .slider_each
+ > img {
+ width: auto;
+ height: 100%;
+ -o-object-fit: cover;
+ object-fit: cover;
+ position: relative;
+ z-index: 2;
+}
+body.onhover
+ section.brand_gallery
+ .brand_gallery_wrapper
+ .slider_each
+ > img:hover {
+ opacity: 0.6;
+}
+section.brand_gallery
+ .brand_gallery_wrapper
+ .slider_each:before {
+ content: '';
+ display: block;
+ position: absolute;
+ box-sizing: border-box;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ pointer-events: none;
+ z-index: -1;
+ background: #000;
+ opacity: 1;
+}
+@media only screen and (max-width: 650px) {
+ section.brand_gallery
+  .brand_gallery_wrapper {
+  width: 100%;
+  height: auto;
+ }
+ section.brand_gallery
+  .brand_gallery_wrapper
+  .slick-track {
+  display: flex;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  -ms-align-content: stretch;
+  align-content: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+ }
+ section.brand_gallery
+  .brand_gallery_wrapper
+  .slick-track
+  .slick-slide {
+  position: relative;
+  height: auto;
+ }
+ section.brand_gallery
+  .brand_gallery_wrapper
+  .slick-track
+  .slick-slide,
+ section.brand_gallery
+  .brand_gallery_wrapper
+  .slick-track
+  .slick-slide
+  > div {
+  display: flex;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -ms-align-content: stretch;
+  align-content: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+ }
+ section.brand_gallery
+  .brand_gallery_wrapper
+  .slider_each {
+  width: 100vw !important;
+  display: block !important;
+  height: auto;
+  cursor: pointer;
+ }
+ section.brand_gallery
+  .brand_gallery_wrapper
+  .slider_each
+  > img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+ }
+}
+
+/* CAROUSEL SETUP */
 
 /* Main Carousel */
 .highlight-main .carousel-cell,

@@ -6,7 +6,8 @@
    */
   $('.highlight-main').flickity({
     pageDots: false,
-    imagesLoaded: true
+    imagesLoaded: true,
+    wrapAround: true,
   });
 
   /**
@@ -19,7 +20,8 @@
     pageDots: false,
     prevNextButtons: false,
     freeScroll: true,
-    imagesLoaded: true
+    imagesLoaded: true,
+    wrapAround: true
   });
   
   /**
