@@ -473,15 +473,15 @@
         justify-content: center;
         align-items: center;
         padding: 0px 1px;
-        width: 99%;
+        width: 330px;
         height: 330px;
         margin-right: 2px;
         counter-increment: gallery-cell;
       }
 
       .gallery .gallery-cell img {
-        width: 100%;
-        height: 500px;
+        width: 330px;
+        height: 330px;
         align-items: center;
         justify-content: center;
         object-fit: cover;
@@ -680,15 +680,15 @@
         justify-content: center;
         align-items: center;
         padding: 0px 1px;
-        width: 66%;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         margin-right: 2px;
         counter-increment: gallery-cell;
       }
 
       .gallery .gallery-cell img {
-        width: 100%;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         align-items: center;
         justify-content: center;
         object-fit: cover;
@@ -915,14 +915,14 @@
         justify-content: center;
         align-items: center;
         padding: 0px 1px;
-        width: 66%;
+        width: 500px;
         height: 500px;
         margin-right: 2px;
         counter-increment: gallery-cell;
       }
 
       .gallery .gallery-cell img {
-        width: 100%;
+        width: 500px;
         height: 500px;
         align-items: center;
         justify-content: center;
@@ -1119,14 +1119,14 @@
         justify-content: center;
         align-items: center;
         padding: 0px 1px;
-        width: 66%;
+        width: 500px;
         height: 500px;
         margin-right: 2px;
         counter-increment: gallery-cell;
       }
 
       .gallery .gallery-cell img {
-        width: 100%;
+        width: 500px;
         height: 500px;
         align-items: center;
         justify-content: center;
